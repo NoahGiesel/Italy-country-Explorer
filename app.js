@@ -7,7 +7,9 @@ const pTag = document.getElementById("paragraf");
         .then(res => res.json())
         .then(data => { 
              for(var i = 0; i < data.length; i++) {
-                console.log(data[i].nome);
+                 if(data[i].nome == "Toscana") { 
+                     console.log("trovato in posizione" + i)
+                 }
          }
 
         }); 
