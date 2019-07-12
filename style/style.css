@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+p {
+  font-size: 30px;
+}
+
+.contenitore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenitore .small {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
+
+.contenitore .small:hover {
+  background-color: aliceblue;
+}
+/*# sourceMappingURL=style.css.map */
