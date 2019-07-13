@@ -6,27 +6,36 @@ html, body {
   background-color: #fff;
 }
 
-p {
-  font-size: 30px;
+.landing__section {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dfdfdf;
 }
 
-.contenitore {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.landing__section svg path {
+  fill: white;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  stroke: rgba(46, 46, 46, 0.411);
 }
 
-.contenitore .small {
-  margin: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
+.landing__section svg path:hover {
+  fill: #ffc934;
 }
 
-.contenitore .small:hover {
-  background-color: aliceblue;
+.landing__section .lago {
+  fill: #00c3ff;
+}
+
+.info__section {
+  height: 100%;
+  width: 100%;
+  background-color: skyblue;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
