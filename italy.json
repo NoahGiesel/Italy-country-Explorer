@@ -2,101 +2,161 @@
     {
         "nome": "Abruzzo",
         "capoluoghi": ["Chieti", "L'Aquila", "Pescara", "Teramo"],
-        "province":["CH","AQ","PE","TE"]
+        "province":["CH","AQ","PE","TE"],
+        "immagine": "https://it.wikipedia.org/wiki/Abruzzo#/media/File:Map_of_region_of_Abruzzo,_Italy,_with_provinces-it.svg",
+        "popolazione": "1,322 M. (2017)",
+        "descrizione": ""
+
     },
     {
         "nome": "Basilicata",
         "capoluoghi": ["Matera", "Potenza"],
-        "province":["MT","PZ"]
+        "province":["MT","PZ"],
+        "immagine": "https://it.wikipedia.org/wiki/Basilicata#/media/File:Map_of_region_of_Basilicata,_Italy,_with_provinces-it.svg",
+        "popolazione": "570.365 (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Calabria",
         "capoluoghi": ["Catanzaro", "Cosenza", "Crotone", "Reggio Calabria", "Vibo Valentia"],
-        "province":["CZ","CS","KR","RC","VV"]
+        "province":["CZ","CS","KR","RC","VV"],
+        "immagine": "https://it.wikipedia.org/wiki/Calabria#/media/File:Map_of_region_of_Calabria,_Italy,_with_provinces-it.svg",
+        "popolazione": "1,965 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Campania ",
         "capoluoghi": ["Avellino", "Benevento", "Caserta", "Napoli", "Salerno"],
-        "province":["AV","BN","CE","NA","SA"]
+        "province":["AV","BN","CE","NA","SA"],
+        "immagine": "https://it.wikipedia.org/wiki/Campania#/media/File:Map_of_region_of_Campania,_Italy,_with_provinces-it.svg",
+        "popolazione": "5,839 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Emilia-Romagna",
         "capoluoghi": ["Bologna", "Ferrara", "Forlì-Cesena", "Modena", "Parma", "Piacenza", "Ravenna", "Reggio Emilia", "Rimini"],
-        "province":["BO","FE","FC","MO","PR","PC","RA","RE","RN"]
+        "province":["BO","FE","FC","MO","PR","PC","RA","RE","RN"],
+        "immagine": "https://it.wikipedia.org/wiki/Emilia-Romagna#/media/File:Map_of_Emilia_Romagna_region_with_administrative_provinces.jpg",
+        "popolazione": "4,449 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Friuli-Venezia Giulia",
         "capoluoghi": ["Gorizia", "Pordenone", "Trieste", "Udine"],
-        "province":["GO","PN","TS","UD"]
+        "province":["GO","PN","TS","UD"],
+        "immagine": "https://it.wikipedia.org/wiki/Friuli-Venezia_Giulia#/media/File:Map_of_region_of_Friuli-Venezia_Giulia,_Italy,_with_provinces-it.svg",
+        "popolazione": "1,218 M.  (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Lazio",
         "capoluoghi": ["Frosinone", "Latina", "Rieti", "Roma", "Viterbo"],
-        "province":["FR","LT","RI","RM","VT"]
+        "province":["FR","LT","RI","RM","VT"],
+        "immagine": "https://it.wikipedia.org/wiki/Lazio#/media/File:Map_of_region_of_Lazio,_Italy,_with_provinces-it.svg",
+        "popolazione": "5,898 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Liguria",
         "capoluoghi": ["Genova", "Imperia", "La Spezia", "Savona"],
-        "province":["GE","IM","SP","SV"]
+        "province":["GE","IM","SP","SV"],
+        "immagine": "https://it.wikipedia.org/wiki/Liguria#/media/File:Map_of_region_of_Liguria,_Italy,_with_provinces-it.svg",
+        "popolazione": "1,565 M.(2017)",
+        "descrizione": ""
     },	
     {
         "nome": "Lombardia",
         "capoluoghi": ["Bergamo", "Brescia", "Como", "Cremona", "Lecco", "Lodi", "Mantova", "Milano", "Monza e Brianza", "Pavia", "Sondrio", "Varese"],
-        "province":["BG","BS","CO","CR","LC","LO","MN","MI","MB","PV","SO","VA"]
+        "province":["BG","BS","CO","CR","LC","LO","MN","MI","MB","PV","SO","VA"],
+        "immagine": "https://it.wikipedia.org/wiki/Lombardia#/media/File:Map_of_region_of_Lombardy,_Italy,_with_provinces-it.svg",
+        "popolazione": "10,02 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Marche",
         "capoluoghi": ["Ancona", "Ascoli Piceno", "Fermo", "Macerata", "Pesaro e Urbino"],
-        "province":["AN","AP","FM","MC","PU"]
+        "province":["AN","AP","FM","MC","PU"],
+        "immagine": "https://it.wikipedia.org/wiki/Marche#/media/File:Map_of_region_of_Marche,_Italy,_with_provinces-it.svg",
+        "popolazione": "1,538 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Molise",
         "capoluoghi": ["Campobasso", "Isernia"],
-        "province":["CB","IS"]
+        "province":["CB","IS"],
+        "immagine": "https://it.wikipedia.org/wiki/Molise#/media/File:Map_of_region_of_Molise,_Italy,_with_provinces-it.svg",
+        "popolazione": "310.449 (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Piemonte",
         "capoluoghi": ["Alessandria", "Asti", "Biella", "Cuneo", "Novara", "Torino", "Verbano Cusio Ossola", "Vercelli"],
-        "province":["AL","AT","BI","CN","NO","TO","VB","VC"]
+        "province":["AL","AT","BI","CN","NO","TO","VB","VC"],
+        "immagine": "https://it.wikipedia.org/wiki/Piemonte#/media/File:Map_of_region_of_Piedmont,_Italy,_with_provinces-it.svg",
+        "popolazione": "4,393 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Puglia",
         "capoluoghi": ["Bari", "Barletta-Andria-Trani", "Brindisi", "Lecce", "Foggia", "Taranto"],
-        "province":["BA","BT","BR","LE","FG","TA"]
+        "province":["BA","BT","BR","LE","FG","TA"],
+        "immagine": "https://it.wikipedia.org/wiki/Puglia#/media/File:Map_of_region_of_Apulia,_Italy,_with_provinces-it.svg",
+        "popolazione": "4,064 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Sardegna",
         "capoluoghi": ["Cagliari", "Carbonia-Iglesias", "Medio Campidano", "Nuoro", "Ogliastra", "Olbia-Tempio", "Oristano", "Sassari"],
-        "province":["CA","CI","VS","NU","OG","OT","OR","SS"]
+        "province":["CA","CI","VS","NU","OG","OT","OR","SS"],
+        "popolazione": "1,653 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Sicilia",
         "capoluoghi": ["Agrigento", "Caltanissetta", "Catania", "Enna", "Messina", "Palermo", "Ragusa", "Siracusa", "Trapani"],
-        "province":["AG","CL","CT","EN","ME","PA","RG","SR","TP"]
+        "province":["AG","CL","CT","EN","ME","PA","RG","SR","TP"],
+        "immagine": "https://it.wikipedia.org/wiki/Sicilia#/media/File:Map_of_region_of_Sicily,_Italy,_with_provinces-it.svg",
+        "popolazione": "5,057 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Toscana",
         "capoluoghi": ["Arezzo", "Firenze", "Grosseto", "Livorno", "Lucca", "Massa e Carrara", "Pisa", "Pistoia", "Prato", "Siena"],
-        "province":["AR","FI","GR","LI","LU","MS","PI","PT","PO","SI"]
+        "province":["AR","FI","GR","LI","LU","MS","PI","PT","PO","SI"],
+        "immagine": "https://it.wikipedia.org/wiki/Toscana#/media/File:Map_of_region_of_Tuscany,_Italy,_with_provinces-it.svg",
+        "popolazione": "3,742 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Trentino-Alto Adige",
         "capoluoghi": ["Bolzano", "Trento"],
-        "province":["BZ","TN"]
+        "province":["BZ","TN"],
+        "immagine": "https://it.wikipedia.org/wiki/Trentino-Alto_Adige#/media/File:Trentino-Alto_Adige_-_Mappa.svg",
+        "popolazione": "1,07 M. (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Umbria",
         "capoluoghi": ["Perugia", "Terni"],
-        "province":["PG","TR"]
+        "province":["PG","TR"],
+        "immagine": "https://it.wikipedia.org/wiki/Umbria#/media/File:Map_of_region_of_Umbria,_Italy,_with_provinces-it.svg",
+        "popolazione": "888.908 (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Valle d'Aosta",
         "capoluoghi": ["Aosta"],
-        "province":["AO"]
+        "province":["AO"],
+        "immagine": "https://it.wikipedia.org/wiki/Valle_d%27Aosta#/media/File:Map_of_region_of_Aosta_Valley,_Italy-it.svg",
+        "popolazione": "126.883 (2017)",
+        "descrizione": ""
     },
     {
         "nome": "Veneto",
         "capoluoghi": ["Belluno", "Padova", "Rovigo", "Treviso", "Venezia", "Verona", "Vicenza"],
-        "province":["BL","PD","RO","TV","VE","VR","VI"]
+        "province":["BL","PD","RO","TV","VE","VR","VI"],
+        "immagine": "https://it.wikipedia.org/wiki/Veneto#/media/File:Map_of_region_of_Veneto,_Italy,_with_provinces-it.svg",
+        "popolazione": "4,908 M. (2017)",
+        "descrizione": ""
     }
 ]
