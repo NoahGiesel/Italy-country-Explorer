@@ -3,7 +3,10 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-image: url(/img/planetBlurred.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .landing__section {
@@ -39,11 +42,13 @@ html, body {
   fill: #00c3ff;
 }
 
-.info__section {
-  height: 100%;
+.title__section {
   width: 100%;
-  background-color: rgba(248, 248, 248, 0.918);
   margin: 0;
-  padding: 0;
+  padding: 50px 0;
+}
+
+h5 {
+  font-size: 40px;
 }
 /*# sourceMappingURL=style.css.map */
