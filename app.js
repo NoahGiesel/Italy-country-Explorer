@@ -2,8 +2,8 @@
 const title = document.getElementById("title");
 const description = document.getElementById("description"); 
 const popolation = document.getElementById("popolation");  
-const capitals = document.getElementById("capitals");
-const provinces = document.getElementById("provinces");
+const capitals = document.getElementById("capitals"); 
+var arr = [];
 
 
 let regionPosition = 0 ; 
@@ -20,15 +20,17 @@ const getCurrentRegion = input => {
         
         title.innerHTML = data[regionPosition].nome;
         
-        description.innerHTML = data[regionPosition].descrizione;
+        description.innerHTML = data[regionPosition].descrizione; 
+        popolation.innerHTML =   data[regionPosition].popolazione;
 
-        
 
-        popolation.innerHTML =  "Popolation: " + data[regionPosition].popolazione;
-        provinces.innerHTML = "Provinces: " + data[regionPosition].province ; 
-        capitals.innerHTML = "Capitals : " + data[regionPosition].capoluoghi ; 
-       } )
-     
+        for( let i = 0 ; i< data[regionPosition].capoluoghi.length ; i++) {
+             arr.push(data[regionPosition].capoluoghi[i] + "(" + data[regionPosition].province[i] + ")") ; 
+             capitals.innerHTML  = arr.join(", ") ;
+        }
+        } )
+      
+           
  }
  
 // DA RIFARE LE IMMAGINI  CON 3D . QUELLE DI WIKIPEDIA NON SONO BUONE ! ! ! 
