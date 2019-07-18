@@ -7,6 +7,7 @@ html , body {
     background-attachment: fixed;
     background-size: cover; 
     background-repeat: no-repeat;
+    
 }
 
  
@@ -45,12 +46,51 @@ html , body {
 }
 
 
+ /* whiteBackground  for general background color */ 
+
+ .whiteBackground { 
+     background-color: rgba(255, 255, 255, 0.678);
+     text-align: center;
+ }
+
 .title__section { 
-    width: 100%;
-    margin: 0;
+    width: 60%;
+    margin: 0 auto;
+    
     padding: 50px 0;
+
+    h2 { 
+        font-size: 40px;
+    }
+
 }
 
-h5 {
-    font-size: 40px;
+
+.information__section { 
+    width: 60%;
+    margin: 0 auto;
+    
+    padding: 50px 0;
+
+    p { 
+        font-size: 25px ; 
+        letter-spacing: 2px; 
+        
+    }
 }
+
+.descrption__section { 
+    width: 60%;
+    margin: 0 auto; 
+    padding: 50px 0;
+    p {
+        font-size: 20px;
+        letter-spacing: 1px;        
+        line-height: 25px;
+        text-align: justify;
+        padding: 0 40px;
+    }
+   
+}
+
+ 
