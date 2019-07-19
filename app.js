@@ -6,7 +6,7 @@ const capitals = document.getElementById("capitals");
 var arr = [];
 
 
-let regionPosition = 0 ; 
+let regionPosition  = 0 ; 
 
 const getCurrentRegion = input => {
      fetch("italy.json")
