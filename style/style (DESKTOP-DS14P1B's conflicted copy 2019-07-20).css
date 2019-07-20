@@ -51,7 +51,7 @@ html, body {
 .information__section {
   width: 60%;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 50px 0;
 }
 
@@ -63,8 +63,8 @@ html, body {
   padding: 0 40px;
 }
 
-.information__section h1 {
-  font-size: 30px;
+.information__section #title {
+  font-size: 40px;
   text-transform: uppercase;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style (DESKTOP-DS14P1B's conflicted copy 2019-07-20).css.map */

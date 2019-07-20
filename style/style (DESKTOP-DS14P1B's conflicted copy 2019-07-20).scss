@@ -48,7 +48,7 @@ html , body {
 
  /* whiteBackground  for general background color */ 
 
- .whiteBackground  { 
+ .whiteBackground { 
      background-color: rgba(255, 255, 255, 0.678);
      text-align: center;
  }
@@ -59,7 +59,7 @@ html , body {
 .information__section { 
     width: 60%;
     margin: 0 auto;
-    border-radius: 5px ; 
+    border-radius: 20px;
     padding: 50px 0;
 
     p {
@@ -70,12 +70,10 @@ html , body {
         padding: 0 40px;
     }
 
-    h1 {
-        font-size: 30px ; 
+    #title { 
+        font-size: 40px;
         text-transform: uppercase;
     }
-
-    
 }
 
  
