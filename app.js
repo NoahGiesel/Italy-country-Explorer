@@ -25,7 +25,13 @@
                 popolation.innerHTML = data[regionPosition].popolazione;
 
 
-                forModel.innerHTML = `<x-model id='model' src='./obj/${data[regionPosition].nome}.obj' class='model'></x-model>`
+                if (!data[regionPosition].nome != "Valle d\'Aosta") {
+                     console.log("sopra: " + data[regionPosition].nome)
+                     forModel.innerHTML = `<x-model id='model' src='./obj/${data[regionPosition].nome}.obj' class='model'></x-model>`
+                } else {
+                     console.log("sotto:" + data[regionPosition].nome)
+                     forModel.innerHTML = `<x-model id='model' src='./obj/${"Valle d\'Aosta"}.obj' class='model'></x-model>`
+                }
 
 
 
