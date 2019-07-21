@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -53,6 +54,30 @@ html, body {
   margin: 0 auto;
   border-radius: 5px;
   padding: 50px 0;
+}
+
+.information__section .model {
+  width: 400px;
+  height: 400px;
+}
+
+.information__section x-model {
+  -webkit-animation: 5s spin linear infinite;
+          animation: 5s spin linear infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotateY(1turn);
+            transform: rotateY(1turn);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateY(1turn);
+            transform: rotateY(1turn);
+  }
 }
 
 .information__section p {

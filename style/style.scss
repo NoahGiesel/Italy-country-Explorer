@@ -1,82 +1,100 @@
-html , body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-     background-image: url(/img/planetBlurred.jpg);
+    background-image: url(/img/planetBlurred.jpg);
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
- 
- 
-.landing__section {     
+
+
+.landing__section {
     text-align: center;
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     background-image: url(/img/planetBlurred.jpg);
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
-  
-    svg { 
+
+    svg {
         height: 100%;
         width: 100%;
- 
+
     }
- svg path   {
-    fill: rgb(255, 255, 255);
-    cursor: pointer;
-    transition: 0.2s;
-    stroke: rgba(46, 46, 46, 0.411);
-         &:hover  {
+
+    svg path {
+        fill: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: 0.2s;
+        stroke: rgba(46, 46, 46, 0.411);
+
+        &:hover {
             fill: rgb(58, 58, 58);
         }
- 
+
     }
 
     .lago {
         fill: rgb(0, 195, 255);
     }
- 
+
 }
 
 
- /* whiteBackground  for general background color */ 
+/* whiteBackground  for general background color */
 
- .whiteBackground  { 
-     background-color: rgba(255, 255, 255, 0.678);
-     text-align: center;
- }
-
- 
+.whiteBackground {
+    background-color: rgba(255, 255, 255, 0.678);
+    text-align: center;
+}
 
 
-.information__section { 
+
+
+.information__section {
     width: 60%;
     margin: 0 auto;
-    border-radius: 5px ; 
+    border-radius: 5px;
     padding: 50px 0;
+
+
+
+    .model {
+        width: 400px;
+        height: 400px;
+    }
+
+    x-model {
+        animation: 5s spin linear infinite;
+
+        @keyframes spin {
+            to {
+                transform: rotateY(1turn);
+            }
+        }
+    }
+
 
     p {
         font-size: 20px;
-        letter-spacing: 1px;        
+        letter-spacing: 1px;
         line-height: 30px;
         text-align: center;
         padding: 0 40px;
     }
 
     h1 {
-        font-size: 30px ; 
+        font-size: 30px;
         text-transform: uppercase;
     }
 
-    
-}
 
- 
- 
+}
