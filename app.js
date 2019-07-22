@@ -19,10 +19,10 @@
                      }
                 }
 
-                title.innerHTML = data[regionPosition].nome;
+               title.innerHTML = data[regionPosition].nome;
 
-                description.innerHTML = data[regionPosition].descrizione;
-                popolation.innerHTML = data[regionPosition].popolazione;
+               description.innerHTML = data[regionPosition].descrizione;
+               popolation.innerHTML = data[regionPosition].popolazione;
 
 
                 if (!data[regionPosition].nome != "Valle d\'Aosta") {
