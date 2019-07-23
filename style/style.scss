@@ -7,11 +7,13 @@ body {
     background-image: url(/img/planetBlurred.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-
+    background-repeat: no-repeat; 
 }
+ 
 
-
+#information__section { 
+    display : none;
+}
 
 .landing__section {
     text-align: center;
@@ -47,15 +49,7 @@ body {
     }
 
 }
-
-
-/* whiteBackground  for general background color */
-
-.whiteBackground {
-    background-color: rgba(255, 255, 255, 0.678);
-    text-align: center;
-}
-
+ 
 
 
 
@@ -64,7 +58,8 @@ body {
     margin: 0 auto;
     border-radius: 5px;
     padding: 50px 0;
-
+    background-color: rgba(255, 255, 255, 0.678);
+    text-align: center;
 
 
     .model {
@@ -97,4 +92,23 @@ body {
     }
 
 
+}
+
+
+footer {
+    height: 30vh ; 
+    background-color: #222 ; 
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px ; 
+
+
+    h4{
+        font-size: 28px ;
+        color: #f3f3f3;
+    }
+
+     
 }

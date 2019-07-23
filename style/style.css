@@ -10,6 +10,10 @@ body {
   background-repeat: no-repeat;
 }
 
+#information__section {
+  display: none;
+}
+
 .landing__section {
   text-align: center;
   height: 100%;
@@ -43,17 +47,13 @@ body {
   fill: #00c3ff;
 }
 
-/* whiteBackground  for general background color */
-.whiteBackground {
-  background-color: rgba(255, 255, 255, 0.678);
-  text-align: center;
-}
-
 .information__section {
   width: 60%;
   margin: 0 auto;
   border-radius: 5px;
   padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.678);
+  text-align: center;
 }
 
 .information__section .model {
@@ -91,5 +91,26 @@ body {
 .information__section h1 {
   font-size: 30px;
   text-transform: uppercase;
+}
+
+footer {
+  height: 30vh;
+  background-color: #222;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+footer h4 {
+  font-size: 28px;
+  color: #f3f3f3;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,8 +2,12 @@
  const description = document.getElementById("description");
  const popolation = document.getElementById("popolation");
  const capitals = document.getElementById("capitals");
- let forModel = document.getElementById("forModel");
+  let forModel = document.getElementById("forModel");
  var arr = [];
+
+ var body = document.getElementsByTagName("BODY")[0];
+ const information__section = document.getElementById("information__section");
+
 
  let modelSrcValue;
 
@@ -18,8 +22,9 @@
                           regionPosition = i;
                      }
                 }
-
-               title.innerHTML = data[regionPosition].nome;
+ 
+ 
+                title.innerHTML = data[regionPosition].nome;
 
                description.innerHTML = data[regionPosition].descrizione;
                popolation.innerHTML = data[regionPosition].popolazione;
@@ -40,20 +45,18 @@
                      arr.push(data[regionPosition].capoluoghi[i] + "(" + data[regionPosition].province[i] + ")");
                      capitals.innerHTML = arr.join(", ");
                 }
+
+
+                information__section.style.display = "block";
+                title.scrollIntoView({ behavior: "smooth"});
+
+
            })
 
 
  }
 
-
- // DA RIFARE LE IMMAGINI  CON 3D . QUELLE DI WIKIPEDIA NON SONO BUONE ! ! ! 
-
-
-
-
-
-
-
+ 
  //weather con api esterno 
  const fetchWeather = input => {
 
