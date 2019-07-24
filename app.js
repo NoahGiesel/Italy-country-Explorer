@@ -3,6 +3,7 @@
  const popolation = document.getElementById("popolation");
  const capitals = document.getElementById("capitals");
   let forModel = document.getElementById("forModel");
+  let iconWeather = document.getElementById("iconWeather");
  var arr = [];
 
  var body = document.getElementsByTagName("BODY")[0];
@@ -28,14 +29,13 @@
 
                description.innerHTML = data[regionPosition].descrizione;
                popolation.innerHTML = data[regionPosition].popolazione;
+               weatherFetcher( data[regionPosition].latitude ,data[regionPosition].longitude)
 
 
                 if (!data[regionPosition].nome != "Valle d\'Aosta") {
-                     console.log("sopra: " + data[regionPosition].nome)
-                     forModel.innerHTML = `<x-model id='model' src='./obj/${data[regionPosition].nome}.obj' class='model'></x-model>`
+                      forModel.innerHTML = `<x-model id='model' src='./obj/${data[regionPosition].nome}.obj' class='model'></x-model>`
                 } else {
-                     console.log("sotto:" + data[regionPosition].nome)
-                     forModel.innerHTML = `<x-model id='model' src='./obj/${"Valle d\'Aosta"}.obj' class='model'></x-model>`
+                      forModel.innerHTML = `<x-model id='model' src='./obj/${"Valle d\'Aosta"}.obj' class='model'></x-model>`
                 }
 
 
@@ -50,14 +50,28 @@
                 information__section.style.display = "block";
                 title.scrollIntoView({ behavior: "smooth"});
 
-
-           })
+            })
 
 
  }
 
  
- //weather con api esterno 
- const fetchWeather = input => {
 
+
+
+ const weatherFetcher = async (lat , long) => { 
+      await fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c6d8ab2c5b0ef4df9c8d9373dd31f7bb/${lat},${long}?exclude=minutely,hourly,daily,flags`)
+     .then(response => {return response.json();}) 
+     .then(data => {
+           setIcons(data.currently.icon, iconWeather)
+     })
+     .catch(err => console.log(err))
+ }
+
+
+ function setIcons(icon, iconID) {
+      const skycons = new Skycons({color: "black"});
+      const currentIcon = icon.replace(/-/g, "_").toUpperCase();
+      skycons.play();
+      return skycons.set(iconID, Skycons[currentIcon])
  }
