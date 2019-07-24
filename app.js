@@ -1,10 +1,12 @@
- const title = document.getElementById("title");
- const description = document.getElementById("description");
- const popolation = document.getElementById("popolation");
- const capitals = document.getElementById("capitals");
-  let forModel = document.getElementById("forModel");
-  let iconWeather = document.getElementById("iconWeather");
- var arr = [];
+const title = document.getElementById("title");
+const description = document.getElementById("description");
+const popolation = document.getElementById("popolation");
+const capitals = document.getElementById("capitals");
+let forModel = document.getElementById("forModel");
+let iconWeather = document.getElementById("iconWeather");
+let weatherCity = document.getElementById("weatherCity");
+let temperature = document.getElementById("temperature");
+var arr = [];
 
  var body = document.getElementsByTagName("BODY")[0];
  const information__section = document.getElementById("information__section");
@@ -29,7 +31,9 @@
 
                description.innerHTML = data[regionPosition].descrizione;
                popolation.innerHTML = data[regionPosition].popolazione;
+
                weatherFetcher( data[regionPosition].latitude ,data[regionPosition].longitude)
+               weatherCity.innerHTML = data[regionPosition].weatherCity; 
 
 
                 if (!data[regionPosition].nome != "Valle d\'Aosta") {
@@ -63,7 +67,9 @@
       await fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c6d8ab2c5b0ef4df9c8d9373dd31f7bb/${lat},${long}?exclude=minutely,hourly,daily,flags`)
      .then(response => {return response.json();}) 
      .then(data => {
+          console.log(data)
            setIcons(data.currently.icon, iconWeather)
+           temperature.innerHTML = parseFloat((data.currently.temperature -32 ) * 5/9).toFixed(1) + "°c";
      })
      .catch(err => console.log(err))
  }
