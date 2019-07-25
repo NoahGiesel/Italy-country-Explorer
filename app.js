@@ -6,7 +6,17 @@ let forModel = document.getElementById("forModel");
 let iconWeather = document.getElementById("iconWeather");
 let weatherCity = document.getElementById("weatherCity");
 let temperature = document.getElementById("temperature");
+let day = document.getElementById("day");
+let year = document.getElementById("year");
 var arr = [];
+
+
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+
 
  var body = document.getElementsByTagName("BODY")[0];
  const information__section = document.getElementById("information__section");
@@ -66,10 +76,13 @@ var arr = [];
  const weatherFetcher = async (lat , long) => { 
       await fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c6d8ab2c5b0ef4df9c8d9373dd31f7bb/${lat},${long}?exclude=minutely,hourly,daily,flags`)
      .then(response => {return response.json();}) 
-     .then(data => {
-          console.log(data)
+     .then(data => { 
            setIcons(data.currently.icon, iconWeather)
            temperature.innerHTML = parseFloat((data.currently.temperature -32 ) * 5/9).toFixed(1) + "°c";
+           var today = new Date();
+           day.innerHTML = String(today.getDate()).padStart(2, '0') + " " + String( monthNames[today.getMonth()]).padStart(2, '0') + ",";
+           year.innerHTML = new Date().getFullYear();
+           
      })
      .catch(err => console.log(err))
  }
