@@ -74,12 +74,14 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 
 
  const weatherFetcher = async (lat , long) => { 
-      await fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c6d8ab2c5b0ef4df9c8d9373dd31f7bb/${lat},${long}?exclude=minutely,hourly,daily,flags`)
+      await fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/5e9da1633c437795172837ded3f8433a/${lat},${long}?exclude=minutely,hourly,daily,flags`)
      .then(response => {return response.json();}) 
      .then(data => { 
            setIcons(data.currently.icon, iconWeather)
+           //format temperature in a proper way  (form F to C )
            temperature.innerHTML = parseFloat((data.currently.temperature -32 ) * 5/9).toFixed(1) + "°c";
            var today = new Date();
+           //format the day and year in a proper way.
            day.innerHTML = String(today.getDate()).padStart(2, '0') + " " + String( monthNames[today.getMonth()]).padStart(2, '0') + ",";
            year.innerHTML = new Date().getFullYear();
            
