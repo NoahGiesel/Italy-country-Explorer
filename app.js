@@ -22,7 +22,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
  const information__section = document.getElementById("information__section");
 
 
- let modelSrcValue;
+ let modelSrcValue ;
 
  let regionPosition = 0;
 
