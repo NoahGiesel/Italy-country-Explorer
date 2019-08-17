@@ -6,20 +6,23 @@ let forModel = document.getElementById("forModel");
 let iconWeather = document.getElementById("iconWeather");
 let weatherCity = document.getElementById("weatherCity");
 let temperature = document.getElementById("temperature");
-let day = document.getElementById("day");
-let year = document.getElementById("year");
-var arr = [];
+let day = document.getElementById("day") ;
+let year = document.getElementById("year") ;
+var arr = [] ;
 
+ 
 
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
-
+ 
 
  var body = document.getElementsByTagName("BODY")[0];
- const information__section = document.getElementById("information__section");
+ const information__section = document.getElementById("information__section"); 
+ 
+
 
 
  let modelSrcValue ;
