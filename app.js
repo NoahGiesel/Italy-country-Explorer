@@ -30,6 +30,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
  let regionPosition = 0;
 
  const getCurrentRegion = input => {
+ 
       fetch("italy.json")
            .then(res => res.json())
            .then(data => {
@@ -39,6 +40,11 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
                      }
                 }
  
+                title.innerHTML = " ";
+                description.innerHTML = " ";
+                popolation.innerHTML = " ";
+                capitals.innerHTML = " ";
+                arr = [];
  
                 title.innerHTML = data[regionPosition].nome;
 
@@ -68,7 +74,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
                 title.scrollIntoView({ behavior: "smooth"});
 
             })
-
+            regionPosition = null ; 
 
  }
 
