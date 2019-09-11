@@ -55,11 +55,8 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
                weatherCity.innerHTML = data[regionPosition].weatherCity; 
 
 
-                if (!data[regionPosition].nome != "Valle d\'Aosta") {
-                      forModel.innerHTML = `<x-model id='model' src='./obj/${data[regionPosition].nome}.obj' class='model'></x-model>`
-                } else {
-                      forModel.innerHTML = `<x-model id='model' src='./obj/${"Valle d\'Aosta"}.obj' class='model'></x-model>`
-                }
+                       forModel.innerHTML = `<img id='model' src='../img/${data[regionPosition].nome}.png' class='model'></img>`
+                   
 
 
 
